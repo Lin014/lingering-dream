@@ -1,0 +1,35 @@
+.fa-ul li{
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto';
+    list-style-type: none;
+    margin-left: -25px;
+    margin-top: 10px;
+}
+
+.contactimf iframe{
+    width: 100%;
+    height: 40vh;
+}
+
+.time{
+    margin-left: 115px;
+}
+
+.title-bar {
+    text-align: center;
+    color: #fff;
+    padding: 2rem 0;
+    font-size: 3rem;
+}
+
+.title-bar span {
+    color: var(--main-color);
+}
+
+@media (max-width: 450px) {
+    .contactimf {
+        padding: 2rem;
+    }
+}
+

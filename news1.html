@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LingeringDream</title>
+    <link rel="icon" type="image/png" href="./images/logo/logo.PNG">
+    <!-- font awesome cdn link -->
+    <script src="https://kit.fontawesome.com/5beb2eb9d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./style_news.css">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./style_news1.css">
+</head>
+<body>
+    <header class="header">
+        <div class="title">
+            <a href="./index.html" class="logo">
+                <img src="./images/logo/logo2.PNG" alt="logo">
+            </a>
+            <a href="./index.html" class="title">
+                <img src="./images/店名/繾綣夢.png" alt="title">
+            </a>
+        </div>
+        
+        <nav class="navbar">
+            <a href="index.html">首頁</a>
+            <a href="about.html">關於我們</a>
+            <a href="news.html">最新消息</a>
+            <a href="menu.html">美食饗宴</a>            
+            <a href="contact.html">聯絡我們</a>
+            <a href="reservation.html">來電預約</a>
+            <a href="feedback.html">顧客回饋</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fa-solid fa-magnifying-glass" id="search-btn"></div>
+            <div class="fa-solid fa-cart-shopping" id="cart-btn"></div>
+            <div class="fa-solid fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+        </div>
+
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <img src="./images/menu/Main Course/Pasta/嫩煎腿排青醬義大利麵.jpg" alt="">
+                <div class="content">
+                    <h3>嫩煎腿排青醬義大利麵</h3>
+                    <div class="price">$15.99</div>
+                </div>
+                <div class="item-numbers-container">
+                    <button type="button" class="fa-solid fa-minus item-btn" id="item-dec"></button> 
+                    <span class="item-numbers" id="item-numbers">1</span>
+                    <button type="button" class="fa-solid fa-plus item-btn" id="item-add"></button>
+                    <button type="button" class="fa-solid fa-xmark item-btn" id="item-remove"></button>               
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="./images/menu/Main Course/Pizza/地中海蔬食披薩.jpg" alt="">
+                <div class="content">
+                    <h3>地中海蔬食披薩</h3>
+                    <div class="price">$15.99</div>
+                </div>
+                <div class="item-numbers-container">
+                    <button type="button" class="fa-solid fa-minus item-btn" id="item-dec"></button> 
+                    <span class="item-numbers" id="item-numbers">1</span>
+                    <button type="button" class="fa-solid fa-plus item-btn" id="item-add"></button>
+                    <button type="button" class="fa-solid fa-xmark item-btn" id="item-remove"></button>               
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="./images/menu/Main Course/Pizza/墨魚餅皮海鮮披薩.jpg" alt="">
+                <div class="content">
+                    <h3>墨魚餅皮海鮮披薩</h3>
+                    <div class="price">$15.99</div>
+                </div>
+                <div class="item-numbers-container">
+                    <button type="button" class="fa-solid fa-minus item-btn" id="item-dec"></button> 
+                    <span class="item-numbers" id="item-numbers">1</span>
+                    <button type="button" class="fa-solid fa-plus item-btn" id="item-add"></button>
+                    <button type="button" class="fa-solid fa-xmark item-btn" id="item-remove"></button>               
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="./images/menu/Main Course/Pasta/海鮮起司義大利麵.jpg" alt="">
+                <div class="content">
+                    <h3>海鮮起司義大利麵</h3>
+                    <div class="price">$15.99</div>
+                </div>
+                <div class="item-numbers-container">
+                    <button type="button" class="fa-solid fa-minus item-btn" id="item-dec"></button> 
+                    <span class="item-numbers" id="item-numbers">1</span>
+                    <button type="button" class="fa-solid fa-plus item-btn" id="item-add"></button>
+                    <button type="button" class="fa-solid fa-xmark item-btn" id="item-remove"></button>               
+                </div>
+            </div>
+            <a href="#" class="btn">前往結帳</a>
+        </div>
+
+
+    </header>
+
+    <div class="space"></div>
+
+    <section class="topic">
+        <h1 class="title-bar"><span>主題</span>套餐</h1>
+
+        <h2 class="topic-title">友誼萬歲</h2>
+        <div class="box-container">
+            <div class="box">
+                <div class="img">
+                    <img src="images/menu/主題套餐/友誼萬歲/和風涼拌沙拉.jpg" alt="">
+                </div>
+                <div class="con">
+                    <span class="title">和風涼拌沙拉</span>
+                    <p>與你在一起，有各種感受，卻輕鬆無負擔</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/menu/主題套餐/友誼萬歲/海鮮南瓜燉飯.jpg" alt="">
+                </div>
+                <div class="con">
+                    <span class="title">海鮮南瓜燉飯</span>
+                    <p>我們有不一樣的特色和想法，卻能互相包容，交織成最好的友誼</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/menu/主題套餐/友誼萬歲/冰淇淋派對.jpg" alt="">
+                </div>
+                <div class="con">
+                    <span class="title">冰淇淋派對</span>
+                    <p>因為有你，我享受著繽紛美好的生活</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/menu/主題套餐/友誼萬歲/翠綠共鳴.jpg" alt="">
+                </div>
+                <div class="con">
+                    <span class="title">翠綠共鳴</span>
+                    <p>感謝緣分讓如此有默契的我們相遇</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="topic-title">失戀進行曲</h2>
+        <div class="box-container">
+            <div class="box">
+                <div class="img">
+                    <img src="images/menu/主題套餐/失戀進行曲/Ciabatta-Bread爵巴塔.jpg" alt="">
+                </div>
+                <div class="con">
+                    <span class="title">爵巴塔</span>
+                    <p>只有自己才懂箇中滋味</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/menu/主題套餐/失戀進行曲/墨魚餅皮海鮮披薩.jpg" alt="">
+                </div>
+                <div class="con">
+                    <span class="title">墨魚餅皮海鮮披薩</span>
+                    <p>黑色回憶裡的美好</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/menu/主題套餐/失戀進行曲/草莓巧克力蛋糕.jpg" alt="">
+                </div>
+                <div class="con">
+                    <span class="title">草莓巧克力蛋糕</span>
+                    <p>You are my black paradise</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/menu/主題套餐/失戀進行曲/Americano.jpg" alt="">
+                </div>
+                <div class="con">
+                    <span class="title">美式咖啡</span>
+                    <p>又苦又澀，卻甘於其中</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="topic-title">此生摯愛</h2>
+        <div class="box-container">
+            <div class="box">
+                <div class="img">
+                    <img src="images/menu/主題套餐/此生摯愛/鮮蔬濃湯.jpg" alt="">
+                </div>
+                <div class="con">
+                    <span class="title">鮮蔬濃湯</span>
+                    <p>單純美好的我們，簡單幸福的生活</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/menu/Main Course/Stewed Rice/焗烤腿排南瓜燉飯.jpg" alt="">
+                </div>
+                <div class="con">
+                    <span class="title">焗烤腿排南瓜燉飯</span>
+                    <p>因為一個人，滿足的快樂</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/menu/主題套餐/此生摯愛/莓果派對.jpg" alt="">
+                </div>
+                <div class="con">
+                    <span class="title">莓果派對</span>
+                    <p>酸甜苦，構成相知相惜的我們</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/menu/主題套餐/此生摯愛/熾熱目光.jpg" alt="">
+                </div>
+                <div class="con">
+                    <span class="title">熾熱目光</span>
+                    <p>只環繞一人的熾熱目光，給我的摯愛</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="topic-title">亞特蘭提斯之戀</h2>
+        <div class="box-container">
+            <div class="box">
+                <div class="img">
+                    <img src="images/menu/主題套餐/亞特蘭提斯之戀/南瓜鮮蝦濃湯.jpg" alt="">
+                </div>
+                <div class="con">
+                    <span class="title">南瓜鮮蝦濃湯</span>
+                    <p>一線之隔，消逝一瞬</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/menu/主題套餐/亞特蘭提斯之戀/焗烤海鮮白醬燉飯.jpg" alt="">
+                </div>
+                <div class="con">
+                    <span class="title">焗烤海鮮白醬燉飯</span>
+                    <p>濃郁美好，卻觸不可及</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/menu/主題套餐/亞特蘭提斯之戀/起司蛋糕.jpg" alt="">
+                </div>
+                <div class="con">
+                    <span class="title">起司蛋糕</span>
+                    <p>因珍貴而美好，轉身便已錯過，留下值得珍藏的餘韻</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/menu/主題套餐/亞特蘭提斯之戀/深情之淚.jpg" alt="">
+                </div>
+                <div class="con">
+                    <span class="title">深情之淚</span>
+                    <p>你如亞特蘭提斯般沒入海底，之中有一滴我的深情之淚</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+        </div>
+    
+        <div class="links">
+            <a href="index.html">首頁</a>
+            <a href="about.html">關於我們</a>
+            <a href="news.html">最新消息</a>
+            <a href="menu.html">美食饗宴</a>            
+            <a href="contact.html">聯絡我們</a>
+            <a href="reservation.html">來電預約</a>
+            <a href="feedback.html">顧客回饋</a>
+        </div>
+    
+        <div class="credit">created by <span>mr. web designer</span> | all rights reserved</div>
+    
+    </section>
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    
+    <!-- js link -->
+    <script src="./script.js"></script>
+    
+</body>
+</html>

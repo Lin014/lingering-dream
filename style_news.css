@@ -1,0 +1,16 @@
+.title-bar {
+    text-align: center;
+    color: #fff;
+    padding: 2rem 0;
+    font-size: 3rem;
+}
+
+.title-bar span {
+    color: var(--main-color);
+}
+
+@media (max-width: 450px) {
+    .news {
+        padding: 0 2rem 5rem 2rem;
+    }
+}

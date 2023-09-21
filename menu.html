@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LingeringDream</title>
+    <link rel="icon" type="image/png" href="./images/logo/logo.PNG">
+    <!-- font awesome cdn link -->
+    <script src="https://kit.fontawesome.com/5beb2eb9d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./style_menu.css">
+</head>
+<body>
+    <header class="header">
+        <div class="title">
+            <a href="./index.html" class="logo">
+                <img src="./images/logo/logo2.PNG" alt="logo">
+            </a>
+            <a href="./index.html" class="title">
+                <img src="./images/店名/繾綣夢.png" alt="title">
+            </a>
+        </div>
+        
+        <nav class="navbar">
+            <a href="index.html">首頁</a>
+            <a href="about.html">關於我們</a>
+            <a href="news.html">最新消息</a>
+            <a href="menu.html">美食饗宴</a>            
+            <a href="contact.html">聯絡我們</a>
+            <a href="reservation.html">來電預約</a>
+            <a href="feedback.html">顧客回饋</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fa-solid fa-magnifying-glass" id="search-btn"></div>
+            <div class="fa-solid fa-cart-shopping" id="cart-btn"></div>
+            <div class="fa-solid fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+        </div>
+
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <img src="./images/menu/Main Course/Pasta/嫩煎腿排青醬義大利麵.jpg" alt="">
+                <div class="content">
+                    <h3>嫩煎腿排青醬義大利麵</h3>
+                    <div class="price">$15.99</div>
+                </div>
+                <div class="item-numbers-container">
+                    <button type="button" class="fa-solid fa-minus item-btn" id="item-dec"></button> 
+                    <span class="item-numbers" id="item-numbers">1</span>
+                    <button type="button" class="fa-solid fa-plus item-btn" id="item-add"></button>
+                    <button type="button" class="fa-solid fa-xmark item-btn" id="item-remove"></button>               
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="./images/menu/Main Course/Pizza/地中海蔬食披薩.jpg" alt="">
+                <div class="content">
+                    <h3>地中海蔬食披薩</h3>
+                    <div class="price">$15.99</div>
+                </div>
+                <div class="item-numbers-container">
+                    <button type="button" class="fa-solid fa-minus item-btn" id="item-dec"></button> 
+                    <span class="item-numbers" id="item-numbers">1</span>
+                    <button type="button" class="fa-solid fa-plus item-btn" id="item-add"></button>
+                    <button type="button" class="fa-solid fa-xmark item-btn" id="item-remove"></button>               
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="./images/menu/Main Course/Pizza/墨魚餅皮海鮮披薩.jpg" alt="">
+                <div class="content">
+                    <h3>墨魚餅皮海鮮披薩</h3>
+                    <div class="price">$15.99</div>
+                </div>
+                <div class="item-numbers-container">
+                    <button type="button" class="fa-solid fa-minus item-btn" id="item-dec"></button> 
+                    <span class="item-numbers" id="item-numbers">1</span>
+                    <button type="button" class="fa-solid fa-plus item-btn" id="item-add"></button>
+                    <button type="button" class="fa-solid fa-xmark item-btn" id="item-remove"></button>               
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="./images/menu/Main Course/Pasta/海鮮起司義大利麵.jpg" alt="">
+                <div class="content">
+                    <h3>海鮮起司義大利麵</h3>
+                    <div class="price">$15.99</div>
+                </div>
+                <div class="item-numbers-container">
+                    <button type="button" class="fa-solid fa-minus item-btn" id="item-dec"></button> 
+                    <span class="item-numbers" id="item-numbers">1</span>
+                    <button type="button" class="fa-solid fa-plus item-btn" id="item-add"></button>
+                    <button type="button" class="fa-solid fa-xmark item-btn" id="item-remove"></button>               
+                </div>
+            </div>
+            <a href="#" class="btn">前往結帳</a>
+        </div>
+
+
+    </header>
+
+    <div class="space"></div>
+
+    <section class="menu">
+
+        <div class="container">
+            <h1 class="title-bar"><span>美食</span>饗宴</h1>
+            <div class="content">
+                <input type="radio" name="indicator" id="appetizer" checked>
+                <input type="radio" name="indicator" id="salad">
+                <input type="radio" name="indicator" id="soup">
+                <input type="radio" name="indicator" id="main">
+                <input type="radio" name="indicator" id="dessert">
+                <input type="radio" name="indicator" id="coffee">
+                <input type="radio" name="indicator" id="specialty">
+                <div class="list">
+                    <label for="appetizer" class="appetizer">
+                        <span class="topic">前菜</span>
+                    </label>
+                    <label for="salad" class="salad">
+                        <span class="topic">沙拉</span>
+                    </label>
+                    <label for="soup" class="soup">
+                        <span class="topic">濃湯</span>
+                    </label>
+                    <label for="main" class="main">
+                        <span class="topic">主菜</span>
+                    </label>
+                    <label for="dessert" class="dessert">
+                        <span class="topic">甜點</span>
+                    </label>
+                    <label for="coffee" class="coffee">
+                        <span class="topic">咖啡</span>
+                    </label>
+                    <label for="specialty" class="specialty">
+                        <span class="topic">特調</span>
+                    </label>
+                    <div class="conindi">
+                        <div class="indicator i1" id="i1">xxx</div>
+                        <div class="indicator i2" id="i2">xxx</div>
+                        <div class="indicator i3" id="i3">xxx</div>
+                        <div class="indicator i4" id="i4">xxx</div>
+                        <div class="indicator i5" id="i5">xxx</div>
+                        <div class="indicator i6" id="i6">xxx</div>
+                        <div class="indicator i7" id="i7">xxx</div>
+                    </div>
+                </div>
+                <div class="list-content">
+                    <!-- 前菜 -->
+                    <div class="appetizer-content con">
+                        <div class="box-container">
+                            <div class="box">
+                                <img src="./images/menu/Appetizer/Chia Seed Whole Wheat Bread奇亞籽全麥麵包.jpg" alt="">
+                                <h3>奇亞籽全麥麵包</h3>
+                                <h4>Chia Seed Whole Wheat Bread</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Appetizer/Ciabatta-Bread爵巴塔.jpg" alt="">
+                                <h3>爵巴塔</h3>
+                                <h4>Ciabatta-Bread</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Appetizer/Garlic bread香蒜麵包.jpg" alt="">
+                                <h3>香蒜麵包</h3>
+                                <h4>/Garlic bread</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Appetizer/Whole wheat french bread全麥法國麵包.jpg" alt="">
+                                <h3>全麥法國麵包</h3>
+                                <h4>Whole wheat french bread</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 沙拉 -->
+                    <div class="salad-content con">
+                        <div class="box-container">
+                            <div class="box">
+                                <img src="./images/menu/Salad/和風涼拌沙拉.jpg" alt="">
+                                <h3>和風涼拌沙拉</h3>
+                                <h4>Zephyr cold salad</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Salad/鮭魚蔬果沙拉.jpg" alt="">
+                                <h3>鮭魚蔬果沙拉</h3>
+                                <h4>Salmon fruit and vegetable salad</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                        </div>
+                    </div> 
+                    <!-- 濃湯 -->
+                    <div class="soup-content con">
+                        <div class="box-container">
+                            <div class="box">
+                                <img src="./images/menu/Thick Soup/南瓜鮮蝦濃湯.jpg" alt="">
+                                <h3>南瓜鮮蝦濃湯</h3>
+                                <h4>Pumpkin shrimp thick soup</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Thick Soup/甜玉米濃湯.jpg" alt="">
+                                <h3>甜玉米濃湯</h3>
+                                <h4>Sweet corn soup</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Thick Soup/鮮蔬濃湯.jpg" alt="">
+                                <h3>鮮蔬濃湯</h3>
+                                <h4>Fresh vegetable soup</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                        </div>                            
+                    </div> 
+                    <!-- 主菜 -->
+                    <div class="main-content con">
+                        <div class="box-container">
+                            <div class="box">
+                                <img src="./images/menu/Main Course/Pasta/嫩煎腿排青醬義大利麵.jpg" alt="">
+                                <h3>嫩煎腿排青醬義大利麵</h3>
+                                <h4>Chicken green sauce pasta</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Main Course/Pasta/法式焗烤鮭魚筆管麵.jpg" alt="">
+                                <h3>法式焗烤鮭魚筆管麵</h3>
+                                <h4>Salmon pen tube noodles</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Main Course/Pasta/海鮮起司義大利麵.jpg" alt="">
+                                <h3>海鮮起司義大利麵</h3>
+                                <h4>Seafood cheese pasta</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Main Course/Pasta/紅醬海鮮義大利麵.jpg" alt="">
+                                <h3>紅醬海鮮義大利麵</h3>
+                                <h4>Red sauce seafood pasta</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Main Course/Pasta/青醬蛤蜊義大利麵.jpg" alt="">
+                                <h3>青醬蛤蜊義大利麵</h3>
+                                <h4>Green sauce clams pasta</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Main Course/Pizza/地中海蔬食披薩.jpg" alt="">
+                                <h3>地中海蔬食披薩</h3>
+                                <h4>Mediterranean vegetable pizza</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Main Course/Pizza/墨魚餅皮海鮮披薩.jpg" alt="">
+                                <h3>墨魚餅皮海鮮披薩</h3>
+                                <h4>Cuttlefish seafood pizza</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Main Course/Pizza/夏威夷披薩.jpg" alt="">
+                                <h3>夏威夷披薩</h3>
+                                <h4>Hawaiian Pizza</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Main Course/Pizza/香草培根披薩.jpg" alt="">
+                                <h3>香草培根披薩</h3>
+                                <h4>Vanilla bacon pizza</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Main Course/Stewed Rice/干貝青醬燉飯.jpg" alt="">
+                                <h3>干貝青醬燉飯</h3>
+                                <h4>Scallop green sauce stewed rice</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Main Course/Stewed Rice/海鮮南瓜燉飯.jpg" alt="">
+                                <h3>海鮮南瓜燉飯</h3>
+                                <h4>Seafood pumpkin stewed rice</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Main Course/Stewed Rice/焗烤海鮮白醬燉飯.jpg" alt="">
+                                <h3>焗烤海鮮白醬燉飯</h3>
+                                <h4>Seafood cream sauce stewed rice</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Main Course/Stewed Rice/焗烤腿排南瓜燉飯.jpg" alt="">
+                                <h3>焗烤腿排南瓜燉飯</h3>
+                                <h4>Leg row pumpkin stewed rice</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Main Course/Stewed Rice/西班牙蔬食龍蝦燉飯.jpg" alt="">
+                                <h3>西班牙蔬食龍蝦燉飯</h3>
+                                <h4>Spain vegetable lobster stewed rice</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                        </div>  
+                    </div>
+                    <!-- 甜點 -->
+                    <div class="dessert-content con">
+                        <div class="box-container">
+                            <div class="box">
+                                <img src="./images/menu/Dessert/冰淇淋派對.jpg" alt="">
+                                <h3>冰淇淋派對</h3>
+                                <h4>Ice cream party</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Dessert/提拉米蘇.jpg" alt="">
+                                <h3>提拉米蘇</h3>
+                                <h4>Tiramisu</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Dessert/甜點音樂會.jpg" alt="">
+                                <h3>甜點音樂會</h3>
+                                <h4>Dessert concert</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Dessert/草莓巧克力蛋糕.jpg" alt="">
+                                <h3>草莓巧克力蛋糕</h3>
+                                <h4>Strawberry Chocolate Cake</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Dessert/莓果派對.jpg" alt="">
+                                <h3>莓果派對</h3>
+                                <h4>Berry party</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Dessert/覆盆莓可可鮮奶油蛋糕.jpg" alt="">
+                                <h3>覆盆莓可可鮮奶油蛋糕</h3>
+                                <h4>Raspberry Cocoa Butter Cake</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                        </div>  
+                    </div> 
+                    <!-- 咖啡 -->
+                    <div class="coffee-content con">
+                        <div class="box-container">
+                            <div class="box">
+                                <img src="./images/menu/Coffee/Americano.jpg" alt="">
+                                <h3>美式咖啡</h3>
+                                <h4>Americano</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Coffee/Café Mocha.jpg" alt="">
+                                <h3>摩卡咖啡</h3>
+                                <h4>Café Mocha</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Coffee/Cappuccino.jpg" alt="">
+                                <h3>卡布奇諾</h3>
+                                <h4>Cappuccino</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Coffee/Caramel Macchiato.jpg" alt="">
+                                <h3>焦糖瑪奇朵</h3>
+                                <h4>Caramel Macchiato</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Coffee/Espresso.jpg" alt="">
+                                <h3>濃縮咖啡</h3>
+                                <h4>Espresso</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Coffee/Irish Coffee.jpg" alt="">
+                                <h3>愛爾蘭咖啡</h3>
+                                <h4>Irish Coffee</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                        </div>  
+                    </div> 
+                    <!-- 特調 -->
+                    <div class="specialty-content con">
+                        <div class="box-container">
+                            <div class="box">
+                                <img src="./images/menu/Specialty/深邃星空.jpg" alt="">
+                                <h3>深邃星空</h3>
+                                <h4>Deep starry sky</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Specialty/熾熱目光.jpg" alt="">
+                                <h3>熾熱目光</h3>
+                                <h4>Glowing eyes</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Specialty/粉色回憶.jpg" alt="">
+                                <h3>粉色回憶</h3>
+                                <h4>Pink memories</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Specialty/紫夜魅惑.jpg" alt="">
+                                <h3>紫夜魅惑</h3>
+                                <h4>Purple night charm</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                            <div class="box">
+                                <img src="./images/menu/Specialty/翠綠共鳴.jpg" alt="">
+                                <h3>翠綠共鳴</h3>
+                                <h4>Green resonance</h4>
+                                <div class="price">$15.99 <span>20.99</span></div>
+                                <a href="#" class="btn">加入購物車</a>
+                            </div>
+                        </div>  
+                    </div>                   
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="footer">
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+        </div>
+    
+        <div class="links">
+            <a href="index.html">首頁</a>
+            <a href="about.html">關於我們</a>
+            <a href="news.html">最新消息</a>
+            <a href="menu.html">美食饗宴</a>            
+            <a href="contact.html">聯絡我們</a>
+            <a href="reservation.html">來電預約</a>
+            <a href="feedback.html">顧客回饋</a>
+        </div>
+    
+        <div class="credit">created by <span>mr. web designer</span> | all rights reserved</div>
+    
+    </section>
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    
+    <!-- js link -->
+    <script src="./script.js"></script>
+    
+</body>
+</html>

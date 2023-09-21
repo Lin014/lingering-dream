@@ -1,0 +1,56 @@
+.topic-title {
+    color: white;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.topic .box-container { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:3rem;
+    margin-bottom: 5rem;
+}
+
+.topic .box-container .box {
+    border:var(--border);
+}
+
+.box .img {
+    height: 25rem;
+    overflow:hidden;
+    width: 100%;
+}
+
+.box .img img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;   
+}
+
+.box:hover .img img {
+    transform: scale(1.2);
+}
+
+.box .con{
+    padding:2rem 0;
+    text-align: center;
+}
+
+.box .con .title{
+    font-size: 2rem;
+    line-height: 1.5;
+    color:#fff;
+}
+
+.box .con p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color:#ccc;
+    padding:1rem 0;
+}
+
+@media (max-width: 450px) {
+    .topic {
+        padding: 0 2rem 5rem 2rem;
+    }
+}

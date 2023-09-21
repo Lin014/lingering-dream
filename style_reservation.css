@@ -1,0 +1,58 @@
+.reserve h3,label{
+    color: white;
+    font-size: 2rem;
+    font-family: 'Roboto';
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+}
+
+.reserve h4{
+    color: white;
+    font-size: 2rem;
+    font-family: 'Roboto';
+    margin-bottom: 2rem;
+}
+
+
+.reserve form input{
+    /* height: 2rem; */
+    margin-bottom: 2.5rem;
+}
+
+.reserve label{
+    font-size: 2rem;
+    color: white;
+    font-family: 'Roboto';
+}
+
+.space01{
+    margin-right: 2rem;
+}
+
+.title-bar {
+    text-align: center;
+    color: #fff;
+    padding: 2rem 0;
+    font-size: 3rem;
+}
+
+.btn {
+    width: 5rem;
+    padding: 0.9rem 0rem;
+}
+
+.btn:hover {
+    letter-spacing: 0;
+    color: black;
+    background-color: var(--main-color);
+}
+
+.title-bar span {
+    color: var(--main-color);
+}
+
+@media (max-width: 450px) {
+    .reserve {
+        padding: 2rem;
+    }
+}

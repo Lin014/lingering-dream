@@ -1,0 +1,58 @@
+.feedbackform h3,label{
+    color: white;
+    font-size: 2rem;
+    font-family: 'Roboto';
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+}
+
+.feedbackform label {
+    font-size: 1rem;
+}
+
+.feedbackform form input{
+    margin-bottom: 2.5rem;
+    
+}
+
+.feedbackform input[type=radio],.space01{
+    margin-right: 0.5rem;
+}
+
+textarea{
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    width: 5rem;
+    padding: 0.9rem 0rem;
+}
+
+.btn:hover {
+    letter-spacing: 0;
+    color: black;
+    background-color: var(--main-color);
+}
+
+.title-bar {
+    text-align: center;
+    color: #fff;
+    padding: 2rem 0;
+    font-size: 3rem;
+}
+
+.title-bar span {
+    color: var(--main-color);
+}
+
+@media (max-width: 450px) {
+    .feedbackform {
+        padding: 2rem;
+    }
+
+    textarea {
+        width: 100%;
+        margin-left: 0;
+    }
+}

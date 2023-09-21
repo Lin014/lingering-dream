@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LingeringDream</title>
+    <link rel="icon" type="image/png" href="./images/logo/logo.PNG">
+    <!-- font awesome cdn link -->
+    <script src="https://kit.fontawesome.com/5beb2eb9d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./style_feedback.css">
+</head>
+<body>
+    <header class="header">
+        <div class="title">
+            <a href="./index.html" class="logo">
+                <img src="./images/logo/logo2.PNG" alt="logo">
+            </a>
+            <a href="./index.html" class="title">
+                <img src="./images/店名/繾綣夢.png" alt="title">
+            </a>
+        </div>
+        
+        <nav class="navbar">
+            <a href="index.html">首頁</a>
+            <a href="about.html">關於我們</a>
+            <a href="news.html">最新消息</a>
+            <a href="menu.html">美食饗宴</a>            
+            <a href="contact.html">聯絡我們</a>
+            <a href="reservation.html">來電預約</a>
+            <a href="feedback.html">顧客回饋</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fa-solid fa-magnifying-glass" id="search-btn"></div>
+            <div class="fa-solid fa-cart-shopping" id="cart-btn"></div>
+            <div class="fa-solid fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+        </div>
+
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <img src="./images/menu/Main Course/Pasta/嫩煎腿排青醬義大利麵.jpg" alt="">
+                <div class="content">
+                    <h3>嫩煎腿排青醬義大利麵</h3>
+                    <div class="price">$15.99</div>
+                </div>
+                <div class="item-numbers-container">
+                    <button type="button" class="fa-solid fa-minus item-btn" id="item-dec"></button> 
+                    <span class="item-numbers" id="item-numbers">1</span>
+                    <button type="button" class="fa-solid fa-plus item-btn" id="item-add"></button>
+                    <button type="button" class="fa-solid fa-xmark item-btn" id="item-remove"></button>               
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="./images/menu/Main Course/Pizza/地中海蔬食披薩.jpg" alt="">
+                <div class="content">
+                    <h3>地中海蔬食披薩</h3>
+                    <div class="price">$15.99</div>
+                </div>
+                <div class="item-numbers-container">
+                    <button type="button" class="fa-solid fa-minus item-btn" id="item-dec"></button> 
+                    <span class="item-numbers" id="item-numbers">1</span>
+                    <button type="button" class="fa-solid fa-plus item-btn" id="item-add"></button>
+                    <button type="button" class="fa-solid fa-xmark item-btn" id="item-remove"></button>               
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="./images/menu/Main Course/Pizza/墨魚餅皮海鮮披薩.jpg" alt="">
+                <div class="content">
+                    <h3>墨魚餅皮海鮮披薩</h3>
+                    <div class="price">$15.99</div>
+                </div>
+                <div class="item-numbers-container">
+                    <button type="button" class="fa-solid fa-minus item-btn" id="item-dec"></button> 
+                    <span class="item-numbers" id="item-numbers">1</span>
+                    <button type="button" class="fa-solid fa-plus item-btn" id="item-add"></button>
+                    <button type="button" class="fa-solid fa-xmark item-btn" id="item-remove"></button>               
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="./images/menu/Main Course/Pasta/海鮮起司義大利麵.jpg" alt="">
+                <div class="content">
+                    <h3>海鮮起司義大利麵</h3>
+                    <div class="price">$15.99</div>
+                </div>
+                <div class="item-numbers-container">
+                    <button type="button" class="fa-solid fa-minus item-btn" id="item-dec"></button> 
+                    <span class="item-numbers" id="item-numbers">1</span>
+                    <button type="button" class="fa-solid fa-plus item-btn" id="item-add"></button>
+                    <button type="button" class="fa-solid fa-xmark item-btn" id="item-remove"></button>               
+                </div>
+            </div>
+            <a href="#" class="btn">前往結帳</a>
+        </div>
+
+
+    </header>
+
+    <div class="space"></div>
+
+    <section class="feedbackform">
+        <h1 class="title-bar"><span>顧客</span>回饋</h1>
+        <h3><i class="far fa-smile"></i><i class="far fa-meh"></i><i class="far fa-frown"></i>  回饋單</h3>
+        <form action="#" method="get">
+            <label>性別：</label>
+            <input type="radio" value="1" name="sex" id="sexradio_1">
+            <label for="sexradio_1">男性</label>
+            <input type="radio" value="2" name="sex" id="sexradio_2">
+            <label for="sexradio_2">女性</label>
+            <input type="radio" value="3" name="sex" id="sexradio_3">
+            <label for="sexradio_3">其他</label>
+            <br>
+            <label>用餐日期及時段：</label>
+            <br>
+            <span class="space01"><input type="date"></span>
+            <select name="time">
+                <option value="0">---------時段--------</option>
+                <option value="1">中午12:00~13:00</option>
+                <option value="2">下午13:00~14:00</option>
+                <option value="3">下午14:00~15:00</option>
+                <option value="4">晚上18:00~19:00</option>
+                <option value="5">晚上19:00~20:00</option>
+                <option value="6">晚上20:00~21:00</option>
+                <option value="7">晚上21:00~22:00</option>
+            </select>
+            <br>
+            <label>餐點滿意度：</label>
+            <input type="radio" value="1" name="food" id="foodradio_1">
+            <label for="foodradio_1">非常滿意</label>
+            <input type="radio" value="2" name="food" id="foodradio_2">
+            <label for="foodradio_2">滿意</label>
+            <input type="radio" value="3" name="food" id="foodradio_3">
+            <label for="foodradio_3">普通</label>
+            <input type="radio" value="4" name="food" id="foodradio_4">
+            <label for="foodradio_4">不滿意</label>
+            <input type="radio" value="5" name="food" id="foodradio_5">
+            <label for="foodradio_5">非常不滿意</label>
+            <br>
+            <textarea name="reson" cols="70" rows="6" placeholder="留下您不滿意的原因，下次光臨會呈上更好的餐點!"></textarea>
+            <br>
+            <label>服務滿意度：</label>
+            <input type="radio" value="1" name="service" id="serviceradio_1">
+            <label for="serviceradio_1">非常滿意</label>
+            <input type="radio" value="2" name="service" id="serviceradio_2">
+            <label for="serviceradio_2">滿意</label>
+            <input type="radio" value="3" name="service" id="serviceradio_3">
+            <label for="serviceradio_3">普通</label>
+            <input type="radio" value="4" name="service" id="serviceradio_4">
+            <label for="serviceradio_4">不滿意</label>
+            <input type="radio" value="5" name="service" id="serviceradio_5">
+            <label for="serviceradio_5">非常不滿意</label>
+            <br>
+            <textarea name="reson" cols="70" rows="6" placeholder="留下您不滿意的原因，下次光臨會呈上更好的服務!"></textarea>
+            <br>
+            <input class="btn" type="button" value="提交">
+            <input class="btn" type="button" value="清除">
+        </form>
+    </section>
+
+    <section class="footer">
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+        </div>
+    
+        <div class="links">
+            <a href="index.html">首頁</a>
+            <a href="about.html">關於我們</a>
+            <a href="news.html">最新消息</a>
+            <a href="menu.html">美食饗宴</a>            
+            <a href="contact.html">聯絡我們</a>
+            <a href="reservation.html">來電預約</a>
+            <a href="feedback.html">顧客回饋</a>
+        </div>
+    
+        <div class="credit">created by <span>mr. web designer</span> | all rights reserved</div>
+    
+    </section>
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    
+    <!-- js link -->
+    <script src="./script.js"></script>
+    
+</body>
+</html>

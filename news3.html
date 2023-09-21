@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LingeringDream</title>
+    <link rel="icon" type="image/png" href="./images/logo/logo.PNG">
+    <!-- font awesome cdn link -->
+    <script src="https://kit.fontawesome.com/5beb2eb9d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./style_news.css">
+
+    !-- css link -->
+    <link rel="stylesheet" href="./style_news1.css">
+</head>
+<body>
+    <header class="header">
+        <div class="title">
+            <a href="./index.html" class="logo">
+                <img src="./images/logo/logo2.PNG" alt="logo">
+            </a>
+            <a href="./index.html" class="title">
+                <img src="./images/店名/繾綣夢.png" alt="title">
+            </a>
+        </div>
+        
+        <nav class="navbar">
+            <a href="index.html">首頁</a>
+            <a href="about.html">關於我們</a>
+            <a href="news.html">最新消息</a>
+            <a href="menu.html">美食饗宴</a>            
+            <a href="contact.html">聯絡我們</a>
+            <a href="reservation.html">來電預約</a>
+            <a href="feedback.html">顧客回饋</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fa-solid fa-magnifying-glass" id="search-btn"></div>
+            <div class="fa-solid fa-cart-shopping" id="cart-btn"></div>
+            <div class="fa-solid fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+        </div>
+
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <img src="./images/menu/Main Course/Pasta/嫩煎腿排青醬義大利麵.jpg" alt="">
+                <div class="content">
+                    <h3>嫩煎腿排青醬義大利麵</h3>
+                    <div class="price">$15.99</div>
+                </div>
+                <div class="item-numbers-container">
+                    <button type="button" class="fa-solid fa-minus item-btn" id="item-dec"></button> 
+                    <span class="item-numbers" id="item-numbers">1</span>
+                    <button type="button" class="fa-solid fa-plus item-btn" id="item-add"></button>
+                    <button type="button" class="fa-solid fa-xmark item-btn" id="item-remove"></button>               
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="./images/menu/Main Course/Pizza/地中海蔬食披薩.jpg" alt="">
+                <div class="content">
+                    <h3>地中海蔬食披薩</h3>
+                    <div class="price">$15.99</div>
+                </div>
+                <div class="item-numbers-container">
+                    <button type="button" class="fa-solid fa-minus item-btn" id="item-dec"></button> 
+                    <span class="item-numbers" id="item-numbers">1</span>
+                    <button type="button" class="fa-solid fa-plus item-btn" id="item-add"></button>
+                    <button type="button" class="fa-solid fa-xmark item-btn" id="item-remove"></button>               
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="./images/menu/Main Course/Pizza/墨魚餅皮海鮮披薩.jpg" alt="">
+                <div class="content">
+                    <h3>墨魚餅皮海鮮披薩</h3>
+                    <div class="price">$15.99</div>
+                </div>
+                <div class="item-numbers-container">
+                    <button type="button" class="fa-solid fa-minus item-btn" id="item-dec"></button> 
+                    <span class="item-numbers" id="item-numbers">1</span>
+                    <button type="button" class="fa-solid fa-plus item-btn" id="item-add"></button>
+                    <button type="button" class="fa-solid fa-xmark item-btn" id="item-remove"></button>               
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="./images/menu/Main Course/Pasta/海鮮起司義大利麵.jpg" alt="">
+                <div class="content">
+                    <h3>海鮮起司義大利麵</h3>
+                    <div class="price">$15.99</div>
+                </div>
+                <div class="item-numbers-container">
+                    <button type="button" class="fa-solid fa-minus item-btn" id="item-dec"></button> 
+                    <span class="item-numbers" id="item-numbers">1</span>
+                    <button type="button" class="fa-solid fa-plus item-btn" id="item-add"></button>
+                    <button type="button" class="fa-solid fa-xmark item-btn" id="item-remove"></button>               
+                </div>
+            </div>
+            <a href="#" class="btn">前往結帳</a>
+        </div>
+
+
+    </header>
+
+    <div class="space"></div>
+    
+    <section class="topic">
+        <h1 class="title-bar"><span>蔬食</span>料理</h1>
+        
+        <div class="box-container">
+            <div class="box">
+                <div class="img">
+                    <img src="images/menu/Thick Soup/鮮蔬濃湯.jpg" alt="">
+                </div>
+                <div class="con">
+                    <span class="title">鮮蔬濃湯</span>
+                    <p>又香又濃的美味</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/menu/Salad/和風涼拌沙拉.jpg" alt="">
+                </div>
+                <div class="con">
+                    <span class="title">和風涼拌沙拉</span>
+                    <p>特殊風味，清爽無負擔</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="images/menu/Main Course/Pizza/地中海蔬食披薩.jpg" alt="">
+                </div>
+                <div class="con">
+                    <span class="title">地中海蔬食披薩</span>
+                    <p>全蔬食融合而成，健康又美味</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="footer">
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+        </div>
+    
+        <div class="links">
+            <a href="index.html">首頁</a>
+            <a href="about.html">關於我們</a>
+            <a href="news.html">最新消息</a>
+            <a href="menu.html">美食饗宴</a>            
+            <a href="contact.html">聯絡我們</a>
+            <a href="reservation.html">來電預約</a>
+            <a href="feedback.html">顧客回饋</a>
+        </div>
+    
+        <div class="credit">created by <span>mr. web designer</span> | all rights reserved</div>
+    
+    </section>
+    
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    
+    <!-- js link -->
+    <script src="./script.js"></script>
+    
+</body>
+</html>
